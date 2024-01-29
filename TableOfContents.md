@@ -3,19 +3,19 @@
 ### Table of Contents
 + Golang Basic Tutorial 
 - About 
-- Basics
-- Loops , Iterations FLow Control 
-- More Types 
-- Concurrency 
-- Error Handling 
+    - Basics
+    - Loops , Iterations FLow Control 
+    - More Types 
+    - Concurrency 
+    - Error Handling 
 
 + Golang Advanced Tutorial 
-- OOPS in golang 
-- Others 
+    - OOPS in golang 
+    - Others 
 
 + All Design Patters in Golang 
-- Creational Design Patterns 
-- Behavioural Design Patterns 
-- Structural Design Patterns
+    - Creational Design Patterns 
+    - Behavioural Design Patterns 
+    - Structural Design Patterns
 
 + Data Structures in Golang 
