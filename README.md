@@ -2,7 +2,6 @@
 
 ### Table of Contents
 + Golang Basic Tutorial 
-- About 
     - Basics
     - Loops , Iterations FLow Control 
     - More Types 
