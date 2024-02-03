@@ -16,5 +16,4 @@ func main(){
 	i = 3
 	defer fmt.Println(i)
 
-
 }
