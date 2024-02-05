@@ -1,26 +1,34 @@
-
-// About * Or dereferencing pointer 
-
-package main 
+package main
 
 import (
 	"fmt"
 )
 
-func main(){
+func main() {
 
-	a := 2 
-	b := &a 
+	a := 2
+	b := &a
+	c := &b
 
-	fmt.Println(a)
-	fmt.Println(*b)
+	fmt.Printf("a: %d\n", a)
+	fmt.Printf("b: %x\n", b)
+	fmt.Printf("c: %x\n", c)
 
-	*b = 3
-	fmt.Println(a)
-	fmt.Println(*b)
+	fmt.Println()
+	fmt.Printf("a: %d\n", a)
+	fmt.Printf("*&a: %d\n", *&a)
+	fmt.Printf("*b: %d\n", *b)
+	fmt.Printf("**c: %d\n", **c)
 
-	a = 4
-	fmt.Println(a)
-	fmt.Println(*b)
+	fmt.Println()
+	fmt.Printf("&a: %d\n", &a)
+	fmt.Printf("b: %d\n", b)
+	fmt.Printf("&*b: %d\n", &*b)
+	fmt.Printf("*&b: %d\n", *&b)
+	fmt.Printf("*c: %d\n", *c)
+
+	fmt.Println()
+	fmt.Printf("b: %d\n", &b)
+	fmt.Printf("*c: %d\n", c)
 
 }
