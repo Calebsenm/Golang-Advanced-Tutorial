@@ -1,3 +1,6 @@
+
+// Struct Field Meta or tags 
+
 package main
 
 import (
