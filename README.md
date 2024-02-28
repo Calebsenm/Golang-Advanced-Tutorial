@@ -1,6 +1,5 @@
 
-
-e## Table of Contents
+## Table of Contents
 + Golang Basic Tutorial 
     - Basics
     - Loops , Iterations FLow Control 
