@@ -15,6 +15,7 @@ func main() {
 	printShortDetails(adidasShort)
 }
 
+
 func printShoeDetails(s iShoe) {
 	fmt.Printf("Logo: %s", s.getLogo())
 	fmt.Println()
