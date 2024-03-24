@@ -1,5 +1,3 @@
-
-
 ## Table of Contents
 + Golang Basic Tutorial 
     - Basics
