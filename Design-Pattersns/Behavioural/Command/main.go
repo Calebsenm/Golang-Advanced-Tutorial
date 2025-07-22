@@ -1,71 +1,27 @@
+package main 
 
-package main
+func main(){
+    tv := &Tv{} 
 
-import "fmt"
-
-type button struct {
-    command command
-}
-
-func (b *button) press() {
-    b.command.execute()
-}
-
-type command interface {
-    execute()
-}
-
-type offCommand struct {
-    device device
-}
-
-func (c *offCommand) execute() {
-    c.device.off()
-}
-
-type onCommand struct {
-    device device
-}
-
-func (c *onCommand) execute() {
-    c.device.on()
-}
-
-type device interface {
-    on()
-    off()
-}
-
-type tv struct {
-    isRunning bool
-}
-
-func (t *tv) on() {
-    t.isRunning = true
-    fmt.Println("Turning tv on")
-}
-
-func (t *tv) off() {
-    t.isRunning = false
-    fmt.Println("Turning tv off")
-}
-
-func main() {
-    tv := &tv{}
-    onCommand := &onCommand{
+    onCommand := &OnCommand{
         device: tv,
     }
-    offCommand := &offCommand{
+
+    offCommand := &OffCommand{
         device: tv,
     }
-    onButton := &button{
-        command: onCommand,
+
+    onButton := &Button{
+        command: onCommand,  
     }
-    onButton.press()
-    offButton := &button{
+    
+    offButton := &Button{
         command: offCommand,
     }
-    offButton.press()
-}
+   
+    onButton.press(); 
+    offButton.press(); 
 
+
+}
 
