@@ -4,12 +4,12 @@ package main
 import "fmt"
 
 type vendingMachine struct {
-    hasItem       state
-    itemRequested state
-    hasMoney      state
-    noItem        state
+    hasItem       State 
+    itemRequested State 
+    hasMoney      State 
+    noItem        State
 
-    currentState state
+    currentState State
 
     itemCount int
     itemPrice int
@@ -57,7 +57,7 @@ func (v *vendingMachine) dispenseItem() error {
     return v.currentState.dispenseItem()
 }
 
-func (v *vendingMachine) setState(s state) {
+func (v *vendingMachine) setState(s State) {
     v.currentState = s
 }
 
